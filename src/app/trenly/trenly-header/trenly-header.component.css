@@ -1,0 +1,61 @@
+header {
+  /*   margin-left: 240px; */
+  position: fixed;
+  top: 0;
+  left: 240px;
+  padding: 0rem 1rem;
+  z-index: 100;
+  width: calc(100% - 240px);
+  background: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  transition: left 500ms;
+}
+
+header.sidebar-close {
+  left: 50px;
+  width: calc(100% - 50px);
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search-wrapper input {
+  border: 0;
+  outline: 0;
+  padding: 1rem;
+  height: 38px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-left: -40px;
+}
+
+.social-icons span,
+.social-icons div {
+  margin-left: 1.2rem;
+}
+
+.social-icons div {
+  width: 40px;
+  height: 40px;
+  background-image: url("../../../assets/images/horse.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+}

@@ -1,0 +1,14 @@
+<aside class="sidebar" [ngClass]='sidebarToggle'>
+    <div class="sidebar__header">
+        <h3 class="brand"><span class="fa fa-handshake-o"></span>
+            <span>Trenly</span>
+        </h3>
+        <span (click)='toggle()' class="fa fa-bars fa-lg"></span>
+    </div>
+    <div class="sidebar__menu">
+        <ul>
+            <li *ngFor="let menu of menus"><a href=""><span class={{menu.icon}}></span><span>{{menu.name}}</span></a>
+            </li>
+        </ul>
+    </div>
+</aside>
