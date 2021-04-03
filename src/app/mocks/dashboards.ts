@@ -1,6 +1,7 @@
 export const dashboardList = [
   {
     name: 'Halion',
+    dashboardLink: 'trenly',
     designer: 'Mike',
     designerLink: 'https://www.twitter.com',
     imgSrc: '../../assets/images/horse.png',

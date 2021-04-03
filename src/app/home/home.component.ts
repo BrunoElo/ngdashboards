@@ -10,7 +10,5 @@ export class HomeComponent implements OnInit {
   dashboards = dashboardList;
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.dashboards);
-  }
+  ngOnInit(): void {}
 }
