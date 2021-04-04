@@ -8,6 +8,14 @@ export const dashboardList = [
     likes: 1,
     rating: 1,
   },
-  { name: '', designer: '', designerLink: '', imgSrc: '', likes: 1, rating: 1 },
+  {
+    name: '',
+    dashboardLink: 'drulister',
+    designer: '',
+    designerLink: '',
+    imgSrc: '../../assets/images/1.jpg',
+    likes: 1,
+    rating: 1,
+  },
   { name: '', designer: '', designerLink: '', imgSrc: '', likes: 1, rating: 1 },
 ];

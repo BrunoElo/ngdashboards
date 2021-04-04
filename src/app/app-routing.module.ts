@@ -8,6 +8,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./trenly/trenly.module').then((m) => m.TrenlyModule),
   },
+  {
+    path: 'drulister',
+    loadChildren: () =>
+      import('./drulister/drulister.module').then((m) => m.DrulisterModule),
+  },
   { path: '', component: HomeComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
