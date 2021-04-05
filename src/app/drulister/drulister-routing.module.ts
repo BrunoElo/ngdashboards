@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TrenlyDashboardComponent } from './trenly-dashboard/trenly-dashboard.component';
-import { TrenlyComponent } from './trenly.component';
+import { DrulisterDashboardComponent } from './drulister-dashboard/drulister-dashboard.component';
+import { DrulisterComponent } from './drulister.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {
     path: '',
-    component: TrenlyComponent,
+    component: DrulisterComponent,
     children: [
       {
         path: 'dashboard',
-        component: TrenlyDashboardComponent,
+        component: DrulisterDashboardComponent,
       },
     ],
   },
@@ -22,4 +22,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TrenlyRoutingModule {}
+export class DrulisterRoutingModule {}

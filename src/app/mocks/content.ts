@@ -42,3 +42,75 @@ export const tableInfo = [
     status: 'success',
   },
 ];
+
+export const cardInfo = [
+  {
+    value: '23',
+    icon: 'fa fa-users fa-2x',
+    name: 'Clients',
+  },
+  {
+    value: '162',
+    icon: 'fa fa-tasks fa-2x',
+    name: 'Projects',
+  },
+  {
+    value: '49',
+    icon: 'fa fa-shopping-bag fa-2x',
+    name: 'Orders',
+  },
+  {
+    value: '8000',
+    icon: 'fa fa-money fa-2x',
+    name: 'Income',
+    money: true,
+  },
+];
+
+export const projects = [
+  {
+    title: 'UI/UX',
+    department: 'UI Team',
+    status: 'review',
+  },
+  {
+    title: 'Web Development',
+    department: 'Frontend',
+    status: 'in progress',
+  },
+  {
+    title: 'App Upgrade',
+    department: 'Mobile Team',
+    status: 'pending',
+  },
+  {
+    title: 'UI/UX',
+    department: 'UI Team',
+    status: 'review',
+  },
+  {
+    title: 'Web Development',
+    department: 'Frontend',
+    status: 'in progress',
+  },
+  {
+    title: 'App Upgrade',
+    department: 'Mobile Team',
+    status: 'pending',
+  },
+  {
+    title: 'UI/UX',
+    department: 'UI Team',
+    status: 'review',
+  },
+  {
+    title: 'Web Development',
+    department: 'Frontend',
+    status: 'in progress',
+  },
+  {
+    title: 'App Upgrade',
+    department: 'Mobile Team',
+    status: 'pending',
+  },
+];

@@ -1,0 +1,57 @@
+<main [ngClass]="{'sidebar-close':menuToggler}">
+    <section class="card-list">
+        <div *ngFor="let card of cardInfo" class="card__item">
+            <div class="card__info-wrapper">
+                <div *ngIf="card.money" class="card__value"> {{card.value | currency: 'NGN':'₦':'4.0'}} </div>
+                <div *ngIf="!card.money" class="card__value"> {{card.value}} </div>
+                <div class="card__name">{{card.name}}</div>
+            </div>
+            <span [ngClass]="card.icon"></span>
+        </div>
+    </section>
+    <section class="recent">
+        <div class="project-table">
+            <div class="table__title">
+                <h2 class="table__title-name">Recent Projects</h2>
+                <button class="see-all__btn">See all<span class="fa fa-arrow-right"></span></button>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <th>Project Title</th>
+                        <th>Department</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let project of projects">
+                            <td>{{project.title}}</td>
+                            <td>{{project.department}}</td>
+                            <td><span [style.color]="colorStatus(project.status)"
+                                    class="fa fa-circle status__dot-color"></span>{{project.status}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="clients__list">
+            <div class="clients__title">
+                <h2 class="clients__title-name">New Clients</h2>
+                <button class="see-all__btn">See all<span class="fa fa-arrow-right"></span></button>
+            </div>
+            <div *ngFor="let i of [1,2,3,4,5,6]" class="client__item">
+                <div class="client__id">
+                    <img class="client__photo" src="../../../assets/images/1.jpg" alt="client photo">
+                    <div class="client__info">
+                        <h5 class="client__name">Chika Okoro</h5>
+                        <h5 class="client__role">Devops Manager</h5>
+                    </div>
+                </div>
+                <div class="contact-mode">
+                    <span class="fa fa-user"></span>
+                    <span class="fa fa-envelope"></span>
+                    <span class="fa fa-phone"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

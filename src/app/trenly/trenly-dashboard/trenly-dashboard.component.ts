@@ -11,7 +11,7 @@ import { DataService } from 'src/app/services/data.service';
 export class TrenlyDashboardComponent implements OnInit {
   monies;
   recents;
-  adjustWidth: string;
+  adjustWidth: string | boolean;
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {

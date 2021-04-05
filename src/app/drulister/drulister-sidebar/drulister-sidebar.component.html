@@ -1,0 +1,17 @@
+<aside #sidebarmenu class="sidebar" [ngClass]="{'collapsed':collapseSideMenu}">
+    <div class="brand">
+        <span class="fa fa-list-alt fa-lg"></span>
+        <h1>Drulister</h1>
+        <!-- <span class="fa fa-bars fa-lg"></span> -->
+    </div>
+    <div class="sidebar__menu">
+        <ul class="sidebar__list">
+            <li class="sidebar__item" *ngFor="let menu of druSideMenus">
+                <a class="sidebar__link" routerLink="/drulister/{{menu.link}}" routerLinkActive="active-link">
+                    <span [ngClass]="menu.icon"></span>
+                    <span class="">{{menu.name}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</aside>
