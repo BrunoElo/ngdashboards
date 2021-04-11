@@ -8,7 +8,7 @@ import { ThemeService } from '../services/theme.service';
   host: {
     '[class.light]': 'themeType === "light"',
     '[class.dark]': 'themeType === "dark"', // module scoped CSS
-    '(click)': 'closeDropdown($event)',
+    /* '(click)': 'closeDropdown($event)', */ //Closing dropdown with changeDetection method
   },
 })
 export class KlayveComponent implements OnInit {
@@ -32,6 +32,7 @@ export class KlayveComponent implements OnInit {
     this.themeService.setTheme(this.themeType);
   }
 
+  /* Closing dropdown with changeDetection method
   closeDropdown(event) {
     console.log(event);
     this.closeDropdownMenu = true;
@@ -39,5 +40,5 @@ export class KlayveComponent implements OnInit {
     setTimeout(() => {
       this.closeDropdownMenu = false;
     }, 2000);
-  }
+  } */
 }
