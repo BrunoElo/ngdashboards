@@ -13,6 +13,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./drulister/drulister.module').then((m) => m.DrulisterModule),
   },
+  {
+    path: 'klayve',
+    loadChildren: () =>
+      import('./klayve/klayve.module').then((m) => m.KlayveModule),
+  },
   { path: '', component: HomeComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

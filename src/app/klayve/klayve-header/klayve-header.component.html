@@ -1,0 +1,54 @@
+<header class="header">
+    <div class="brand">
+        <a class="brand__link" routerLink="">
+            <span class="brand__logo fa fa-key fa-2x"></span>
+            <h2 class="brand__name">Klayve</h2>
+        </a>
+        <span (click)="toggleSidebar()" class="fa fa-bars fa-lg"></span>
+    </div>
+    <form class="search-form">
+        <input class="header__search-input" type="search" placeholder="What you want?...">
+        <span class="fa fa-search"></span>
+    </form>
+    <span *ngIf="isDark" data-theme="light" (click)="changeTheme($event)" class="sun-glow fa fa-sun-o"></span>
+    <span *ngIf="!isDark" data-theme="dark" (click)="changeTheme($event)" class="moon-glow fa fa-moon-o"></span>
+    <div class="user-center">
+        <div class="notification-wrapper">
+            <span (click)="toggleDropdown($event)" class="user__notification fa fa-bell fa-lg"><span
+                    class="notification-badge">10</span></span>
+            <div (click)="$event.stopPropagation()" *ngIf="isOpen" class="dropdown">
+                <div class="notification__header dropdown__header">
+                    <h4>Notifications</h4>
+                </div>
+                <ul class="notification__list dropdown__list">
+                    <li *ngFor="let notif of notifications" class="notification__item dropdown__item">
+                        <a routerLink="" class="notification__link dropdown__link">
+                            <span [class]="notif.icon"></span>
+                            <div class="notification__detail-wrapper">
+                                <p class="notification__detail">{{notif.detail}}</p>
+                                <small class="notification__date">{{notif.date | date}}</small>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="notification__footer dropdown__footer">
+                    <h4>See All Notifications</h4>
+                </div>
+            </div>
+        </div>
+        <div class="user-wrapper">
+            <img (click)="toggleProfileDropdown($event)" class="user__photo" src="../../../assets/images/3.jpeg"
+                alt="profile photo">
+            <div (click)="$event.stopPropagation()" *ngIf="isProfileOpen" class="dropdown user-dropdown">
+                <ul class="option__list dropdown__list">
+                    <li *ngFor="let option of options" class="option__item dropdown__item">
+                        <a routerLink="" class="option__link dropdown__link">
+                            <span [class]="option.icon"></span>
+                            <span class="option">{{option.name}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

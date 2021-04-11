@@ -5,6 +5,7 @@ const profilePhotos: string[] = [
   '../../assets/images/2.jpg',
   '../../assets/images/3.jpeg',
 ];
+
 export const tableInfo = [
   {
     project: 'App Development',
@@ -113,4 +114,69 @@ export const projects = [
     department: 'Mobile Team',
     status: 'pending',
   },
+];
+
+export const notifications = [
+  {
+    date: currentDate,
+    icon: 'fa fa-at',
+    detail: '3 pending details need to be completed',
+  },
+  {
+    date: currentDate,
+    icon: 'fa fa-birthday-cake',
+    detail:
+      'You still have a few more information to provide to complete your profile',
+  },
+  {
+    date: currentDate,
+    icon: 'fa fa-at',
+    detail: '3 pending details need to be completed',
+  },
+  {
+    date: currentDate,
+    icon: 'fa fa-birthday-cake',
+    detail:
+      'You still have a few more information to provide to complete your profile',
+  },
+  {
+    date: currentDate,
+    icon: 'fa fa-at',
+    detail: '3 pending details need to be completed',
+  },
+  {
+    date: currentDate,
+    icon: 'fa fa-birthday-cake',
+    detail:
+      'You still have a few more information to provide to complete your profile',
+  },
+  {
+    date: currentDate,
+    icon: 'fa fa-at',
+    detail: '3 pending details need to be completed',
+  },
+  {
+    date: currentDate,
+    icon: 'fa fa-birthday-cake',
+    detail:
+      'You still have a few more information to provide to complete your profile',
+  },
+  {
+    date: currentDate,
+    icon: 'fa fa-at',
+    detail: '3 pending details need to be completed',
+  },
+  {
+    date: currentDate,
+    icon: 'fa fa-birthday-cake',
+    detail:
+      'You still have a few more information to provide to complete your profile',
+  },
+];
+
+export const profileOptions = [
+  { icon: 'fa fa-user', name: 'Profile' },
+  { icon: 'fa fa-cog', name: 'Settings' },
+  { icon: 'fa fa-credit-card', name: 'Payments' },
+  { icon: 'fa fa-sign-out', name: 'Logout' },
 ];

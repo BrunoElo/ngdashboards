@@ -1,0 +1,10 @@
+main {
+  background-color: var(--second-bg-color);
+  padding: 1rem;
+  margin-left: 250px;
+  transition: margin-left 0.4s;
+}
+
+.expanded {
+  margin-left: 70px;
+}

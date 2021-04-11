@@ -1,0 +1,50 @@
+aside {
+  background-color: var(--main-bg-color);
+  width: 70px;
+  height: 100vh;
+  position: fixed;
+  overflow-x: hidden; /* A different method for  sidebar toggle */
+  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.12);
+  transition: width 0.4s;
+}
+
+.collapsed {
+  width: 250px;
+}
+
+aside:hover {
+  width: 250px;
+}
+
+.sidebar__list {
+  padding: 1rem 0rem;
+  text-align: center;
+}
+
+.sidebar__link {
+  display: flex;
+  color: var(--main-color);
+  padding: 1rem;
+}
+
+.sidebar__link:hover {
+  background-color: var(--second-bg-color);
+}
+
+.sidebar__link span:first-child {
+  width: 3rem;
+  padding-right: 3rem;
+  padding-left: 0.5rem;
+  color: var(--second-color);
+}
+
+.active {
+  background-color: var(--second-bg-color);
+  color: var(--danger-color);
+  border-left: 5px solid var(--danger-color);
+}
+
+.active span:first-child {
+  margin-left: -5px;
+  color: var(--danger-color);
+}

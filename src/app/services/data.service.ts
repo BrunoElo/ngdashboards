@@ -7,8 +7,10 @@ import { fromEvent, Subject } from 'rxjs';
 export class DataService {
   // Observable string sources
   private navToggleSource = new Subject<string | boolean>();
+
   // Observable string streams
   navToggle$ = this.navToggleSource.asObservable();
+
   // Observable for window resize event
   resize$ = fromEvent(window, 'resize');
 

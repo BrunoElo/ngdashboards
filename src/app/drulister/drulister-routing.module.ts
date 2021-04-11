@@ -4,7 +4,6 @@ import { DrulisterDashboardComponent } from './drulister-dashboard/drulister-das
 import { DrulisterComponent } from './drulister.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {
     path: '',
     component: DrulisterComponent,
@@ -13,9 +12,9 @@ const routes: Routes = [
         path: 'dashboard',
         component: DrulisterDashboardComponent,
       },
+      { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },
     ],
   },
-  { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },
 ];
 
 @NgModule({
