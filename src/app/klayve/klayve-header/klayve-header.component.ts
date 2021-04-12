@@ -101,9 +101,9 @@ export class KlayveHeaderComponent implements OnInit {
     this.dataService.sendNavState(this.isCollapsed);
   }
 
-  changeTheme(event) {
+  changeTheme(theme) {
     // Theme switch with Output()
-    this.themeMode.emit(event.target.dataset.theme);
+    this.themeMode.emit(theme);
     this.isDark = !this.isDark;
 
     // Theme switch with service
@@ -116,6 +116,9 @@ export class KlayveHeaderComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    this.bodyRemoveListener();
+    if (this.bodyRemoveListener) {
+      // Extra measure although listener has already been removed
+      this.bodyRemoveListener();
+    }
   }
 }

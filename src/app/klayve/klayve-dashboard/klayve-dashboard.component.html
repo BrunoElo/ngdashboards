@@ -1,1 +1,60 @@
-<main [class]="{'expanded':!isExpanded}"> hey </main>
+<main [class]="{'expanded':!isExpanded}">
+    <section class="overview__list">
+        <div *ngFor="let item of overviews" class="overview__item">
+            <fa-icon [icon]="item.icon" class="overview__icon"></fa-icon>
+            <span class="overview__value">{{item.value}}</span>
+            <span class="overview__status">{{item.name}}</span>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="table-card card">
+            <div class="card__title">
+                <h4>Recent Projects</h4>
+                <fa-icon icon="ellipsis-h" class=""></fa-icon>
+            </div>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <th>#</th>
+                        <th>Project</th>
+                        <th>Manager</th>
+                        <th>Status</th>
+                        <th>Due date</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of tableData; index as i">
+                            <td>{{i}}</td>
+                            <td>{{data.project}}</td>
+                            <td>{{data.manager}}</td>
+                            <td>
+                                <fa-icon icon='circle' [style.color]="colorStatus(data.status)" class="">
+                                </fa-icon>{{data.status}}
+                            </td>
+                            <td>{{data.dueDate | date}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="progress-card card">
+            <div class="card__title">
+                <h4>Progress</h4>
+                <fa-icon icon="ellipsis-h" class=""></fa-icon>
+            </div>
+            <div class="progress-wrapper">
+                <div *ngFor="let item of progresses" class="progress">
+                    <div class="progress-details">
+                        <label>{{item.label}}</label> <span class="value">{{item.value}}%</span>
+                    </div>
+                    <div class="progress-bar__outer">
+                        <div [style.width.%]="item.value" [style.background-color]="progressColor(item.value)"
+                            class="progress-bar__inner"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="data-visualization">
+        <canvas id="sampleChart" class="chart"></canvas>
+    </section>
+</main>

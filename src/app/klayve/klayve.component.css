@@ -16,6 +16,7 @@
   --dark-background: #23242d;
   --dark-second-background: #181818;
 
+  --transition-all: all 1s;
   font-family: "Roboto", sans-serif;
 }
 
@@ -24,6 +25,7 @@
   --second-bg-color: var(--light-second-background);
   --main-color: var(--light-color);
   --second-color: var(--light-second-color);
+  --brand-color: var(--light-color);
 }
 
 :host(.dark) {
@@ -31,4 +33,5 @@
   --second-bg-color: var(--dark-second-background);
   --main-color: var(--dark-color);
   --second-color: var(--dark-second-color);
+  --brand-color: var(--dark-second-color);
 }

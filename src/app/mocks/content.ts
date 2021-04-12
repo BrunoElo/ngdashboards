@@ -1,3 +1,12 @@
+import {
+  faAt,
+  faBirthdayCake,
+  faCog,
+  faCreditCard,
+  faSignOutAlt,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons';
+
 const currentDate = new Date();
 const endDate = new Date(currentDate.getTime() + 24 * 60 * 60 * 1000 * 10);
 const profilePhotos: string[] = [
@@ -42,6 +51,46 @@ export const tableInfo = [
     team: profilePhotos,
     status: 'success',
   },
+];
+
+export const klayveTable = [
+  {
+    project: 'App Development',
+    manager: 'Chidimma',
+    status: 'completed',
+    dueDate: endDate,
+  },
+  {
+    project: 'Logo Design',
+    manager: 'Ade',
+    status: 'pending',
+    dueDate: endDate,
+  },
+  {
+    project: 'Server setup',
+    manager: 'Temi',
+    status: 'in progress',
+    dueDate: endDate,
+  },
+  {
+    project: 'Front-end Design',
+    manager: 'Halima',
+    status: 'completed',
+    dueDate: endDate,
+  },
+  {
+    project: 'Web Development',
+    manager: 'Ngozi',
+    status: 'in progress',
+    dueDate: endDate,
+  },
+];
+
+export const progressInfo = [
+  { value: 38, label: 'Less than 1 hour' },
+  { value: 50, label: '1 - 3 hours' },
+  { value: 75, label: 'More than 3 hours' },
+  { value: 20, label: 'More than 6 hours' },
 ];
 
 export const cardInfo = [
@@ -119,64 +168,64 @@ export const projects = [
 export const notifications = [
   {
     date: currentDate,
-    icon: 'fa fa-at',
+    icon: faAt,
     detail: '3 pending details need to be completed',
   },
   {
     date: currentDate,
-    icon: 'fa fa-birthday-cake',
+    icon: faBirthdayCake,
     detail:
       'You still have a few more information to provide to complete your profile',
   },
   {
     date: currentDate,
-    icon: 'fa fa-at',
+    icon: faAt,
     detail: '3 pending details need to be completed',
   },
   {
     date: currentDate,
-    icon: 'fa fa-birthday-cake',
+    icon: faBirthdayCake,
     detail:
       'You still have a few more information to provide to complete your profile',
   },
   {
     date: currentDate,
-    icon: 'fa fa-at',
+    icon: faAt,
     detail: '3 pending details need to be completed',
   },
   {
     date: currentDate,
-    icon: 'fa fa-birthday-cake',
+    icon: faBirthdayCake,
     detail:
       'You still have a few more information to provide to complete your profile',
   },
   {
     date: currentDate,
-    icon: 'fa fa-at',
+    icon: faAt,
     detail: '3 pending details need to be completed',
   },
   {
     date: currentDate,
-    icon: 'fa fa-birthday-cake',
+    icon: faBirthdayCake,
     detail:
       'You still have a few more information to provide to complete your profile',
   },
   {
     date: currentDate,
-    icon: 'fa fa-at',
+    icon: faAt,
     detail: '3 pending details need to be completed',
   },
   {
     date: currentDate,
-    icon: 'fa fa-birthday-cake',
+    icon: faBirthdayCake,
     detail:
       'You still have a few more information to provide to complete your profile',
   },
 ];
 
 export const profileOptions = [
-  { icon: 'fa fa-user', name: 'Profile' },
-  { icon: 'fa fa-cog', name: 'Settings' },
-  { icon: 'fa fa-credit-card', name: 'Payments' },
-  { icon: 'fa fa-sign-out', name: 'Logout' },
+  { icon: faUser, name: 'Profile' },
+  { icon: faCog, name: 'Settings' },
+  { icon: faCreditCard, name: 'Payments' },
+  { icon: faSignOutAlt, name: 'Logout' },
 ];

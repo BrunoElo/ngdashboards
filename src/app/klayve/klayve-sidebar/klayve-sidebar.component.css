@@ -1,11 +1,13 @@
 aside {
   background-color: var(--main-bg-color);
   width: 70px;
+  margin-top: 2.83rem;
   height: 100vh;
   position: fixed;
   overflow-x: hidden; /* A different method for  sidebar toggle */
   box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.12);
-  transition: width 0.4s;
+  transition: width 0.4s, background-color 1s;
+  z-index: 2;
 }
 
 .collapsed {
@@ -31,7 +33,7 @@ aside:hover {
   background-color: var(--second-bg-color);
 }
 
-.sidebar__link span:first-child {
+.sidebar__link fa-icon {
   width: 3rem;
   padding-right: 3rem;
   padding-left: 0.5rem;
@@ -42,9 +44,16 @@ aside:hover {
   background-color: var(--second-bg-color);
   color: var(--danger-color);
   border-left: 5px solid var(--danger-color);
+  transition: var(--transition-all);
 }
 
-.active span:first-child {
+.active fa-icon {
   margin-left: -5px;
   color: var(--danger-color);
+}
+
+@media only screen and (max-width: 481px) {
+  aside {
+    width: 0px;
+  }
 }

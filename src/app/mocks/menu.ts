@@ -1,3 +1,14 @@
+import {
+  faArchive,
+  faChartBar,
+  faCog,
+  faEnvelope,
+  faTasks,
+  faThLarge,
+  faUser,
+  faUsers,
+  faWrench,
+} from '@fortawesome/free-solid-svg-icons';
 import { sideMenu } from '../models/menu';
 
 // Trenly
@@ -24,4 +35,18 @@ export const drulisterMenus: sideMenu[] = [
 
   { icon: 'fa fa-wrench fa-lg', name: 'Services', link: 'services' },
   { icon: 'fa fa-cog fa-lg', name: 'Settings', link: 'settings' },
+];
+
+// Klayve
+export const klayveMenus: sideMenu[] = [
+  { icon: faThLarge, name: 'Dashboard', link: 'dashboard' },
+  { icon: faUsers, name: 'Clients', link: 'clients' },
+  { icon: faTasks, name: 'Projects', link: 'projects' },
+  { icon: faUser, name: 'Profile', link: 'profile' },
+  { icon: faChartBar, name: 'Performance', link: 'performance' },
+  { icon: faEnvelope, name: 'Messages', link: 'messages' },
+  { icon: faArchive, name: 'Inventory', link: 'inventory' },
+
+  { icon: faWrench, name: 'Services', link: 'services' },
+  { icon: faCog, name: 'Settings', link: 'settings' },
 ];

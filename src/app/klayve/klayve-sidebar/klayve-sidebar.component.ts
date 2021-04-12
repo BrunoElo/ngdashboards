@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { drulisterMenus } from 'src/app/mocks/menu';
+import { drulisterMenus, klayveMenus } from 'src/app/mocks/menu';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./klayve-sidebar.component.css'],
 })
 export class KlayveSidebarComponent implements OnInit {
-  sidebarMenus = drulisterMenus;
+  sidebarMenus = klayveMenus;
   isCollapsed: string | boolean;
   constructor(private dataService: DataService) {}
 

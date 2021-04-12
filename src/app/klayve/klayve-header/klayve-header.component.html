@@ -1,21 +1,26 @@
 <header class="header">
     <div class="brand">
         <a class="brand__link" routerLink="">
-            <span class="brand__logo fa fa-key fa-2x"></span>
-            <h2 class="brand__name">Klayve</h2>
+            <fa-icon class="brand__logo " [icon]="['fab','kickstarter-k']" size="2x"></fa-icon>
+            <h2 class="brand__name">layve</h2>
         </a>
-        <span (click)="toggleSidebar()" class="fa fa-bars fa-lg"></span>
+        <fa-icon (click)="toggleSidebar()" icon="bars" size="lg"></fa-icon>
     </div>
     <form class="search-form">
         <input class="header__search-input" type="search" placeholder="What you want?...">
-        <span class="fa fa-search"></span>
+        <fa-icon class="" icon="search"></fa-icon>
     </form>
-    <span *ngIf="isDark" data-theme="light" (click)="changeTheme($event)" class="sun-glow fa fa-sun-o"></span>
-    <span *ngIf="!isDark" data-theme="dark" (click)="changeTheme($event)" class="moon-glow fa fa-moon-o"></span>
+    <fa-icon *ngIf="isDark" data-theme="light" (click)="changeTheme('light')" class="sun-glow " icon="sun">
+    </fa-icon>
+    <fa-icon *ngIf="!isDark" data-theme="dark" (click)="changeTheme('dark')" class="moon-glow " icon="moon">
+    </fa-icon>
     <div class="user-center">
         <div class="notification-wrapper">
-            <span (click)="toggleDropdown($event)" class="user__notification fa fa-bell fa-lg"><span
-                    class="notification-badge">10</span></span>
+            <span class="notification-icon-wrapper">
+                <fa-icon (click)="toggleDropdown($event)" class="user__notification" icon="bell" size="lg">
+                </fa-icon>
+                <span class="notification-badge">10</span>
+            </span>
             <div (click)="$event.stopPropagation()" *ngIf="isOpen" class="dropdown">
                 <div class="notification__header dropdown__header">
                     <h4>Notifications</h4>
@@ -23,7 +28,7 @@
                 <ul class="notification__list dropdown__list">
                     <li *ngFor="let notif of notifications" class="notification__item dropdown__item">
                         <a routerLink="" class="notification__link dropdown__link">
-                            <span [class]="notif.icon"></span>
+                            <fa-icon [icon]="notif.icon"></fa-icon>
                             <div class="notification__detail-wrapper">
                                 <p class="notification__detail">{{notif.detail}}</p>
                                 <small class="notification__date">{{notif.date | date}}</small>
@@ -43,7 +48,7 @@
                 <ul class="option__list dropdown__list">
                     <li *ngFor="let option of options" class="option__item dropdown__item">
                         <a routerLink="" class="option__link dropdown__link">
-                            <span [class]="option.icon"></span>
+                            <fa-icon [icon]="option.icon"></fa-icon>
                             <span class="option">{{option.name}}</span>
                         </a>
                     </li>
