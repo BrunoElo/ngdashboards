@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TrenlyDashboardComponent } from './trenly-dashboard/trenly-dashboard.component';
-import { TrenlyComponent } from './trenly.component';
+import { KlayveDashboardComponent } from './klayve-dashboard/klayve-dashboard.component';
+import { KlayveComponent } from './klayve.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: TrenlyComponent,
+    component: KlayveComponent,
     children: [
       {
         path: 'dashboard',
-        component: TrenlyDashboardComponent,
+        component: KlayveDashboardComponent,
       },
       { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },
     ],
@@ -21,4 +21,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TrenlyRoutingModule {}
+export class KlayveRoutingModule {}

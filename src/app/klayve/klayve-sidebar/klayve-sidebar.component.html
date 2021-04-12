@@ -1,0 +1,11 @@
+<aside class="sidebar" [class]="{'collapsed':isCollapsed}">
+    <ul class="sidebar__list">
+        <li *ngFor="let menu of sidebarMenus" class="sidebar__item">
+            <a routerLink="/klayve/{{menu.link}}" routerLinkActive="active" class="sidebar__link">
+                <fa-icon [icon]="menu.icon" size="lg"></fa-icon>
+                <!--  <span [class]="menu.icon"></span> -->
+                <span>{{menu.name}}</span>
+            </a>
+        </li>
+    </ul>
+</aside>
