@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { drulisterMenus } from 'src/app/mocks/menu';
-import { sideMenu } from 'src/app/models/menu';
+import { drulisterMenus } from 'src/app/shared/mocks/menu';
+import { sideMenu } from 'src/app/shared/models/menu';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({

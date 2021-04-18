@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { tableInfo } from 'src/app/mocks/content';
-import { money } from 'src/app/mocks/numbers';
+import { tableInfo } from 'src/app/shared/mocks/content';
+import { money } from 'src/app/shared/mocks/numbers';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({

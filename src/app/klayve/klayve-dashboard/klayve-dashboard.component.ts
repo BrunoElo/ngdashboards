@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Chart from 'chart.js/auto';
-import { klayveTable, progressInfo } from 'src/app/mocks/content';
-import { overviews } from 'src/app/mocks/numbers';
+import { klayveTable, progressInfo } from 'src/app/shared/mocks/content';
+import { overviews } from 'src/app/shared/mocks/numbers';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({

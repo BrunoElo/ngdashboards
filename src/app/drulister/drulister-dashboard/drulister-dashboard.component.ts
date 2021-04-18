@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { cardInfo, projects } from 'src/app/mocks/content';
+import { cardInfo, projects } from 'src/app/shared/mocks/content';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({

@@ -7,7 +7,7 @@ import {
   Renderer2,
   SimpleChanges,
 } from '@angular/core';
-import { notifications, profileOptions } from 'src/app/mocks/content';
+import { notifications, profileOptions } from 'src/app/shared/mocks/content';
 import { DataService } from 'src/app/services/data.service';
 import { ThemeService } from 'src/app/services/theme.service';
 

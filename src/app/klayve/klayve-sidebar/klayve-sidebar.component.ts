@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { drulisterMenus, klayveMenus } from 'src/app/mocks/menu';
+import { drulisterMenus, klayveMenus } from 'src/app/shared/mocks/menu';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({

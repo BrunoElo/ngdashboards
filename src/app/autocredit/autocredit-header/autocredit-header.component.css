@@ -1,0 +1,40 @@
+header {
+  margin-left: 266px;
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.bar {
+  padding-left: 0.5rem;
+  background-color: var(--bg-color);
+  width: 100%;
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  background-color: #c9c7ca;
+  border-radius: 50%;
+}
+
+.user-center {
+  display: flex;
+  align-items: center;
+}
+
+.profile-wrapper {
+  padding: 0.5rem;
+  background-color: #fbe681;
+  border-radius: 50%;
+  margin: 0rem 1rem;
+}
+
+.username {
+  white-space: nowrap;
+}

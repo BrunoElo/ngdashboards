@@ -1,0 +1,71 @@
+aside {
+  width: 250px;
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  padding: 1rem 2rem;
+}
+
+.brand__icon {
+  stroke: white;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.brand__name {
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.brand__name span {
+  font-weight: 600;
+}
+
+.nav__item:last-child {
+  margin-top: 13rem;
+}
+
+.nav__item:last-child .nav__link {
+  color: var(--primary-font-color);
+  font-weight: 500;
+}
+
+.nav__item:last-child .nav__icon {
+  fill: var(--svg-active-color);
+}
+
+.nav__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--secondary-font-color);
+  padding: 1rem 2rem;
+}
+
+.nav__icon {
+  margin-right: 1rem;
+  fill: var(--secondary-font-color);
+}
+
+.active {
+  font-weight: 600;
+  color: var(--primary-font-color);
+  background-color: var(--accent-color);
+}
+
+.active .nav__icon {
+  fill: var(--svg-active-color);
+}
+
+.nav__link:hover {
+  background-color: var(--accent-color);
+}
