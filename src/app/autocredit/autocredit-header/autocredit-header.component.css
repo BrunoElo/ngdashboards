@@ -1,9 +1,11 @@
 header {
-  margin-left: 266px;
   background-color: white;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 266px;
   display: flex;
-
   justify-content: space-between;
 }
 

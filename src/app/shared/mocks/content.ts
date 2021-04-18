@@ -15,6 +15,12 @@ const profilePhotos: string[] = [
   '../../assets/images/3.jpeg',
 ];
 
+export const slideImages = [
+  { src: profilePhotos[0] },
+  { src: profilePhotos[1] },
+  { src: profilePhotos[2] },
+];
+
 export const tableInfo = [
   {
     project: 'App Development',
