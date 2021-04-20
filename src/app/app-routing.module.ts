@@ -18,8 +18,15 @@ const routes: Routes = [
     loadChildren: () =>
       import('./klayve/klayve.module').then((m) => m.KlayveModule),
   },
+  {
+    path: 'autocredit',
+    loadChildren: () =>
+      import('./dashboards/autocredit/autocredit.module').then(
+        (m) => m.AutocreditModule
+      ),
+  },
+
   { path: '', component: HomeComponent },
-  { path: 'autocredit', loadChildren: () => import('./autocredit/autocredit.module').then(m => m.AutocreditModule) },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 

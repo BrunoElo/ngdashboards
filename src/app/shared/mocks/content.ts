@@ -16,9 +16,9 @@ const profilePhotos: string[] = [
 ];
 
 export const slideImages = [
-  { src: 'assets/images/credit card.png' },
-  { src: 'assets/images/credit card2.png' },
-  { src: 'assets/images/credit card3.png' },
+  { src: 'app/dashboards/autocredit/assets/images/credit card.png' },
+  { src: 'app/dashboards/autocredit/assets/images/credit card2.png' },
+  { src: 'app/dashboards/autocredit/assets/images/credit card3.png' },
 ];
 
 export const tableInfo = [

@@ -6,7 +6,7 @@ import { AutocreditComponent } from './autocredit.component';
 import { AutocreditHeaderComponent } from './autocredit-header/autocredit-header.component';
 import { AutocreditDashboardComponent } from './autocredit-dashboard/autocredit-dashboard.component';
 import { AutocreditSidebarComponent } from './autocredit-sidebar/autocredit-sidebar.component';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [
