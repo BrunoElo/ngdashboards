@@ -16,9 +16,9 @@ const profilePhotos: string[] = [
 ];
 
 export const slideImages = [
-  { src: profilePhotos[0] },
-  { src: profilePhotos[1] },
-  { src: profilePhotos[2] },
+  { src: 'assets/images/credit card.png' },
+  { src: 'assets/images/credit card2.png' },
+  { src: 'assets/images/credit card3.png' },
 ];
 
 export const tableInfo = [

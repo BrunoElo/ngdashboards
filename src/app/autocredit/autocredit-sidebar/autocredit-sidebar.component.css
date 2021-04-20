@@ -4,6 +4,9 @@ aside {
   height: 100vh;
   position: fixed;
   top: 0;
+  overflow-x: hidden;
+  transition: width 0.2s;
+  z-index: 2;
 }
 
 .brand {
@@ -17,6 +20,9 @@ aside {
   stroke: white;
   width: 2rem;
   height: 2rem;
+}
+
+.brand__icon-wrapper {
   margin-right: 0.5rem;
 }
 
@@ -31,12 +37,13 @@ aside {
 }
 
 .nav__item:last-child {
-  margin-top: 13rem;
+  margin-top: 11rem;
 }
 
 .nav__item:last-child .nav__link {
   color: var(--primary-font-color);
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .nav__item:last-child .nav__icon {
@@ -46,13 +53,17 @@ aside {
 .nav__link {
   position: relative;
   display: flex;
-  align-items: center;
+  /*   align-items: center;
+ */
   color: var(--secondary-font-color);
   padding: 1rem 2rem;
 }
 
+.nav__icon-wrapper {
+  margin-right: 2rem;
+}
+
 .nav__icon {
-  margin-right: 1rem;
   fill: var(--secondary-font-color);
 }
 
@@ -68,4 +79,33 @@ aside {
 
 .nav__link:hover {
   background-color: var(--accent-color);
+}
+
+/* Sidebar closed */
+
+.collapsed {
+  width: 85px;
+}
+
+.collapsed .brand__icon-wrapper {
+  margin-right: 2rem;
+  margin-left: -0.3rem;
+}
+
+.collapsed:hover {
+  width: 250px;
+}
+
+.collapsed:hover .brand__icon-wrapper {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 481px) {
+  .collapsed {
+    width: 0px;
+  }
+
+  aside {
+    width: 230px;
+  }
 }

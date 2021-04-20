@@ -9,9 +9,9 @@ import { Component, Input, OnInit } from '@angular/core';
     trigger('carouselAnimation', [
       transition('void => *', [
         style({ opacity: 0 }),
-        animate('300ms', style({ opacity: 1 })),
+        animate('500ms', style({ opacity: 1 })),
       ]),
-      transition('*=> void', [animate('300ms', style({ opacity: 0 }))]),
+      transition('*=> void', [animate('500ms', style({ opacity: 0 }))]),
     ]),
   ],
 })
