@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   FaIconLibrary,
   FontAwesomeModule,
@@ -14,6 +15,7 @@ import {
   faCog,
   faEllipsisH,
   faEnvelope,
+  faExternalLinkAlt,
   faMoon,
   faSearch,
   faSun,
@@ -30,13 +32,19 @@ import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(
+      faExternalLinkAlt,
       faCircle,
       faEllipsisH,
       faArchive,

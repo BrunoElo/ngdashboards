@@ -6,18 +6,28 @@ const routes: Routes = [
   {
     path: 'trenly',
     loadChildren: () =>
-      import('./trenly/trenly.module').then((m) => m.TrenlyModule),
+      import('./dashboards/trenly/trenly.module').then((m) => m.TrenlyModule),
   },
   {
     path: 'drulister',
     loadChildren: () =>
-      import('./drulister/drulister.module').then((m) => m.DrulisterModule),
+      import('./dashboards/drulister/drulister.module').then(
+        (m) => m.DrulisterModule
+      ),
   },
   {
     path: 'klayve',
     loadChildren: () =>
-      import('./klayve/klayve.module').then((m) => m.KlayveModule),
+      import('./dashboards/klayve/klayve.module').then((m) => m.KlayveModule),
   },
+  {
+    path: 'autocredit',
+    loadChildren: () =>
+      import('./dashboards/autocredit/autocredit.module').then(
+        (m) => m.AutocreditModule
+      ),
+  },
+
   { path: '', component: HomeComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

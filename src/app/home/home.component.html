@@ -14,17 +14,24 @@
             <div *ngFor="let dashboard of dashboards" class="dashboard__item">
                 <img class="dashboard__image" [src]="dashboard.imgSrc" alt="dashboard preview">
                 <div class="dashboard__details">
-                    <div>
-                        <h4 class="dashboard__name">{{dashboard.name}}</h4>
-                        <span class="dashboard__designer">Designed by <a class="dashboard__link"
-                                href="{{dashboard.designerLink}}">{{dashboard.designer}}</a> </span>
-                    </div>
-                    <div>
-                        <a [routerLink]="[dashboard.dashboardLink,'dashboard']" class="dashboard__Link">Live</a>
-                        <!-- <span class="dashboard__rating"><b>rating</b>(stars)</span>
+                    <div class="dashboard__info">
+                        <div>
+                            <h4 class="dashboard__name">{{dashboard.name}}</h4>
+                            <ng-container *ngIf="dashboard.designer">
+                                <span class="dashboard__designer">Designed by <a class="dashboard__link"
+                                        href="{{dashboard.designerLink}}">{{dashboard.designer}}</a> </span>
+                            </ng-container>
+                        </div>
+                        <div>
+                            <a [routerLink]="[dashboard.dashboardLink,'dashboard']" class="dashboard__Link">
+                                <fa-icon icon="external-link-alt"></fa-icon>
+                            </a>
+                            <!-- <span class="dashboard__rating"><b>rating</b>(stars)</span>
                         <span class="dashboard__like">&hearts;</span> <sup>5</sup>
                     -->
+                        </div>
                     </div>
+                    <div class="dashboard__tools"><span *ngFor="let tool of dashboard.tools">{{tool}}</span></div>
                 </div>
             </div>
         </div>

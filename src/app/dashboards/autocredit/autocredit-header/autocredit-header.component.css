@@ -1,0 +1,93 @@
+header {
+  background-color: white;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 266px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 1px 9px #00000026;
+  transition: left 0.2s;
+  z-index: 2;
+}
+
+.expanded {
+  left: 101px;
+}
+
+.bar {
+  padding-left: 0.5rem;
+  background-color: var(--bg-color);
+  width: 100%;
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  background-color: #c9c7ca;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 11px 13px #0000004a;
+}
+
+.user-center {
+  display: flex;
+  align-items: center;
+}
+
+/* .profile-wrapper {
+  padding: 0.5rem;
+  background-color: #fbe681;
+  border-radius: 50%;
+  margin: 0rem 1rem;
+}
+ */
+.profile-photo {
+  width: 38px;
+  border-radius: 50%;
+  margin: 0rem 1rem;
+}
+
+.username {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 590px) {
+  .bar {
+    margin-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .expanded {
+    left: 0px;
+  }
+
+  .bar {
+    margin-right: 0rem;
+  }
+
+  .username {
+    white-space: normal;
+  }
+
+  .expanded .username {
+    white-space: nowrap;
+  }
+
+  header {
+    left: 246px;
+  }
+
+  .user-center svg {
+    width: 3rem;
+  }
+
+  .profile-photo {
+    margin: 0rem 0.5rem;
+  }
+}

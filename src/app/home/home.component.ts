@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { dashboardList } from '../mocks/dashboards';
+import { dashboardList } from '../shared/mocks/dashboards';
 
 @Component({
   selector: 'app-home',

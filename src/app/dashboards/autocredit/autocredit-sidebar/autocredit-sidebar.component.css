@@ -1,0 +1,111 @@
+aside {
+  width: 250px;
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  transition: width 0.2s;
+  z-index: 2;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  padding: 1rem 2rem;
+}
+
+.brand__icon {
+  stroke: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+.brand__icon-wrapper {
+  margin-right: 0.5rem;
+}
+
+.brand__name {
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.brand__name span {
+  font-weight: 600;
+}
+
+.nav__item:last-child {
+  margin-top: 11rem;
+}
+
+.nav__item:last-child .nav__link {
+  color: var(--primary-font-color);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav__item:last-child .nav__icon {
+  fill: var(--svg-active-color);
+}
+
+.nav__link {
+  position: relative;
+  display: flex;
+  /*   align-items: center;
+ */
+  color: var(--secondary-font-color);
+  padding: 1rem 2rem;
+}
+
+.nav__icon-wrapper {
+  margin-right: 2rem;
+}
+
+.nav__icon {
+  fill: var(--secondary-font-color);
+}
+
+.active {
+  font-weight: 600;
+  color: var(--primary-font-color);
+  background-color: var(--accent-color);
+}
+
+.active .nav__icon {
+  fill: var(--svg-active-color);
+}
+
+.nav__link:hover {
+  background-color: var(--accent-color);
+}
+
+/* Sidebar closed */
+
+.collapsed {
+  width: 85px;
+}
+
+.collapsed .brand__icon-wrapper {
+  margin-right: 2rem;
+  margin-left: -0.3rem;
+}
+
+.collapsed:hover {
+  width: 250px;
+}
+
+.collapsed:hover .brand__icon-wrapper {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 481px) {
+  .collapsed {
+    width: 0px;
+  }
+
+  aside {
+    width: 230px;
+  }
+}

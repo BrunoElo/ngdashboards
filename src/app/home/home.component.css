@@ -2,6 +2,7 @@
   --main-color: #1976d2;
   --bg-color: #f5faff;
   --ng-red: #ff0000;
+  --black-color: #2f373df2;
 }
 
 * {
@@ -82,12 +83,29 @@ main {
 }
 
 .dashboard__details {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+}
+
+.dashboard__Link {
+  color: var(--ng-red);
+}
+
+.dashboard__info {
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
 }
 
-.dashboard__designer {
+.dashboard__tools span {
+  background-color: var(--main-color);
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  margin-right: 0.3em;
+  color: white;
+}
+
+.dashboard__designer,
+.dashboard__tools span {
   font-size: 0.8rem;
 }
 
