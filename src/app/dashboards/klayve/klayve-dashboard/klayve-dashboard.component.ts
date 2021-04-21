@@ -1,5 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import Chart from 'chart.js/auto';
+import {
+  BarController,
+  BarElement,
+  CategoryScale,
+  Chart,
+  Legend,
+  LinearScale,
+  Tooltip,
+} from 'chart.js';
+Chart.register(
+  BarController,
+  LinearScale,
+  CategoryScale,
+  BarElement,
+  Tooltip,
+  Legend
+);
 import { klayveTable, progressInfo } from 'src/app/shared/mocks/content';
 import { overviews } from 'src/app/shared/mocks/numbers';
 import { DataService } from 'src/app/services/data.service';
@@ -27,7 +43,7 @@ export class KlayveDashboardComponent implements OnInit {
 
   initializeChart() {
     this.chart = new Chart('sampleChart', {
-      type: 'line',
+      type: 'bar',
       data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [

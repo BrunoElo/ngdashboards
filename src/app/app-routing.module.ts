@@ -16,7 +16,7 @@ const routes: Routes = [
   {
     path: 'klayve',
     loadChildren: () =>
-      import('./klayve/klayve.module').then((m) => m.KlayveModule),
+      import('./dashboards/klayve/klayve.module').then((m) => m.KlayveModule),
   },
   {
     path: 'autocredit',
