@@ -15,6 +15,7 @@ import {
   faCog,
   faEllipsisH,
   faEnvelope,
+  faExternalLinkAlt,
   faMoon,
   faSearch,
   faSun,
@@ -43,6 +44,7 @@ import { HomeComponent } from './home/home.component';
 export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(
+      faExternalLinkAlt,
       faCircle,
       faEllipsisH,
       faArchive,
