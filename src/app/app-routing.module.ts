@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: 'trenly',
     loadChildren: () =>
-      import('./trenly/trenly.module').then((m) => m.TrenlyModule),
+      import('./dashboards/trenly/trenly.module').then((m) => m.TrenlyModule),
   },
   {
     path: 'drulister',
