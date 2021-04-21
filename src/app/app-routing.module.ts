@@ -11,7 +11,9 @@ const routes: Routes = [
   {
     path: 'drulister',
     loadChildren: () =>
-      import('./drulister/drulister.module').then((m) => m.DrulisterModule),
+      import('./dashboards/drulister/drulister.module').then(
+        (m) => m.DrulisterModule
+      ),
   },
   {
     path: 'klayve',
