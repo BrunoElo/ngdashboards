@@ -1,5 +1,10 @@
 # Ngdashboards
 
+This project is a collection of dashboards built with angular.  
+Each dashboard was implemented as lazy loaded module to allow for optimisations and easy scaling of the dashboards if additional views are to be made.
+
+> New branches were made for each dashboard implementation
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
 
 ## Development server
