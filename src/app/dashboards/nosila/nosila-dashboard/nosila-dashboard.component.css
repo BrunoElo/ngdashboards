@@ -529,12 +529,9 @@ td:nth-child(1) {
     grid-column: 1/13;
   }
 
-  .wallet {
-    grid-column: 1/13;
-  }
-
   .board-intro,
-  .overview {
+  .overview,
+  .wallet {
     grid-column: 1/13;
   }
 }
