@@ -45,7 +45,7 @@ const routes: Routes = [
     redirectTo: 'nosila',
     pathMatch: 'full',
     /* component: HomeComponent, 
-    canActivate: [AuthLazyLoadGuard],*/
+    canActivate: [AuthLazyLoadGuard]*/
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
