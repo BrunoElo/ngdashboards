@@ -53,8 +53,6 @@ export class NosilaDashboardComponent implements OnInit, AfterViewInit {
       .selectRootElement(this.revchart)
       .nativeElement.getContext('2d');
 
-    console.log(this.revChartContext);
-
     const gradientFill = this.revChartContext.createLinearGradient(
       0,
       0,

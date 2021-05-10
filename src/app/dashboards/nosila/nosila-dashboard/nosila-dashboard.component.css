@@ -179,6 +179,7 @@ main {
 .visitors {
   grid-row: 9/12;
   height: 396.422px;
+  width: -moz-available; /* Mozilla compatibility */
 }
 
 .visitors__chart {
@@ -325,6 +326,7 @@ main {
 
 .revenue {
   grid-row: 3/8;
+  width: -moz-available; /* Mozilla compatibility */
 }
 
 .visitors__head,
