@@ -18,6 +18,8 @@ import {
   PointElement,
   Tooltip,
 } from 'chart.js';
+import { Observable } from 'rxjs';
+import { CanComponentDeactivate } from 'src/app/guards/can-deactivate.guard';
 Chart.register(
   BarController,
   BarElement,
@@ -35,7 +37,8 @@ Chart.register(
   templateUrl: './nosila-dashboard.component.html',
   styleUrls: ['./nosila-dashboard.component.css'],
 })
-export class NosilaDashboardComponent implements OnInit, AfterViewInit {
+export class NosilaDashboardComponent
+  implements OnInit, AfterViewInit, CanComponentDeactivate {
   value;
   chart: Chart;
   @ViewChild('revchart') revchart: ElementRef;
@@ -159,5 +162,9 @@ export class NosilaDashboardComponent implements OnInit, AfterViewInit {
         },
       },
     });
+  }
+
+  canDeactivate(): Observable<boolean> | Promise<boolean> | boolean {
+    return false;
   }
 }

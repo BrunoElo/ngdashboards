@@ -290,7 +290,7 @@ main {
 }
 
 .wallet__list {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(199px, 1fr));
 
