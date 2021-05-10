@@ -40,7 +40,13 @@ const routes: Routes = [
     canDeactivate: [CanDeactivateGuard],
   },
 
-  { path: '', component: HomeComponent, canActivate: [AuthLazyLoadGuard] },
+  {
+    path: '',
+    redirectTo: 'nosila',
+    pathMatch: 'full',
+    /* component: HomeComponent, 
+    canActivate: [AuthLazyLoadGuard],*/
+  },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 
