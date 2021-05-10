@@ -39,4 +39,14 @@ export const dashboardList = [
     rating: 1,
     tools: ['Angular', 'Chart.js'],
   },
+  {
+    name: 'Nosila',
+    designer: 'Alison Eyo',
+    dashboardLink: 'nosila',
+    designerLink: 'https://www.behance.net/alisoneyo',
+    imgSrc: 'assets/images/nosiladashboard.png',
+    likes: 1,
+    rating: 1,
+    tools: ['Angular', 'Chart.js', 'Primeng'],
+  },
 ];

@@ -1,0 +1,210 @@
+<main class="board">
+    <section class="board-intro">
+        <div class="greeting">
+            <h1 class="greeting-main"><span class="greeting--light">Welcome back,</span> Alison!</h1>
+            <p class="greeting-info">Your students completed <span class="greeting--red">80%</span> of the
+                tasks.<br>Progress is <span class="greeting--red">very good!</span></p>
+        </div>
+        <img src="../../../../assets/images/boardphoto.png" alt="board photo">
+    </section>
+    <section class="calendar">
+        <p-calendar styleClass="'p-calendar'" [(ngModel)]="value" [inline]="true">
+        </p-calendar>
+    </section>
+    <section class="overview">
+        <div class="overview__item">
+            <div class="overview__content">
+                <div class="overview__amount">2090</div>
+                <div class="overview__title">Students</div>
+            </div>
+            <svg class="overview__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" fill-opacity="0.3"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M24 16.4055C24 15.4901 23.4104 14.7169 22.5938 14.4257V7.14159L24 6.56179L12 1.74707L0 6.56179L12 11.3766L21.1875 7.70624V14.4257C20.3708 14.7169 19.7812 15.4901 19.7812 16.4055C19.7812 17.2437 20.2762 17.9631 20.986 18.3031L19.8177 21.8081L21.1511 22.253L21.8906 20.0345L22.6301 22.253L23.9636 21.8081L22.7953 18.3031C23.505 17.9632 24 17.2437 24 16.4055Z"
+                    fill="#503E9D" />
+                <path
+                    d="M12 12.892L5.67188 10.351V12.1868C5.67188 14.1911 8.39236 15.7024 12 15.7024C15.6076 15.7024 18.3281 14.1911 18.3281 12.1868V10.351L12 12.892Z"
+                    fill="#503E9D" />
+            </svg>
+        </div>
+        <div class="overview__item">
+            <div class="overview__content">
+                <div class="overview__amount">90</div>
+                <div class="overview__title">Co-Instructors</div>
+            </div>
+            <svg class="overview__icon" width="48" height="48" viewBox="0 0 24 24" fill="none" fill-opacity="0.3"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M16.5 12C17.88 12 18.99 10.88 18.99 9.5C18.99 8.12 17.88 7 16.5 7C15.12 7 14 8.12 14 9.5C14 10.88 15.12 12 16.5 12ZM9 11C10.66 11 11.99 9.66 11.99 8C11.99 6.34 10.66 5 9 5C7.34 5 6 6.34 6 8C6 9.66 7.34 11 9 11ZM16.5 14C14.67 14 11 14.92 11 16.75V19H22V16.75C22 14.92 18.33 14 16.5 14ZM9 13C6.67 13 2 14.17 2 16.5V19H9V16.75C9 15.9 9.33 14.41 11.37 13.28C10.5 13.1 9.66 13 9 13Z"
+                    fill="#503E9D" />
+            </svg>
+        </div>
+        <div class="overview__item">
+            <div class="overview__content">
+                <div class="overview__amount">140</div>
+                <div class="overview__title">Courses</div>
+            </div>
+            <svg class="overview__icon" width="48" height="48" viewBox="0 0 80 64" fill="none" fill-opacity="0.3"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M74.2928 19.6426C73.9693 17.2107 73.9237 13.0221 76.1825 11.6156C76.2229 11.5898 76.253 11.5526 76.2883 11.5206C78.135 10.9299 79.413 10.101 78.4098 8.98556L51.1681 0.777344L7.05755 6.91011C7.05755 6.91011 2.00634 7.63209 2.45758 15.4798C2.70254 19.751 4.04216 21.8487 5.2137 22.881L1.59403 23.9719C0.58937 25.0873 1.86715 25.9165 3.71412 26.5062C3.74921 26.5391 3.77882 26.5762 3.81988 26.6019C6.07725 28.0096 6.0338 32.1978 5.7091 34.6301C-2.40048 36.9329 0.510583 37.6833 0.510583 37.6833L2.2895 38.1137C1.03822 39.2445 -0.20447 41.3887 0.0283098 45.4553C0.479784 53.3016 4.62876 53.843 4.62876 53.843L33.4945 63.2254L77.0637 52.6722C77.0637 52.6722 79.9758 51.9206 71.864 49.6176C71.5379 47.1891 71.4925 43.0014 73.7552 41.5902C73.7967 41.5651 73.827 41.5271 73.8607 41.4956C75.7076 40.905 76.9845 40.0767 75.981 38.9613L74.0873 38.3895C75.3502 37.6279 77.2473 35.6374 77.5446 30.4671C77.7497 26.9106 76.8219 24.8278 75.748 23.6016L79.4911 22.6958C79.4913 22.6972 82.4034 21.9456 74.2928 19.6426ZM37.8497 19.5421L45.1764 18.0363L69.9366 12.9481L73.6255 12.1893C72.4468 14.3467 72.4962 17.2991 72.6913 19.1966C72.734 19.6259 72.7832 20.0179 72.831 20.3159L68.7933 21.3198L37.5417 29.0943L37.8497 19.5421ZM6.37712 27.178L10.0656 27.9368L33.8442 32.825L35.9216 33.2504L42.1513 34.5308L42.4585 44.0832L10.3387 36.092L7.17215 35.3051C7.21871 35.0066 7.26789 34.6151 7.31254 34.1846C7.5064 32.2885 7.55678 29.3354 6.37712 27.178ZM4.94415 15.1021C4.8995 13.0147 5.27147 11.5051 6.02329 10.7377C6.50175 10.2478 7.06639 10.1459 7.45364 10.1459C7.65825 10.1459 7.80556 10.1743 7.81558 10.1743L26.8217 16.3706L36.3041 19.4621L35.993 29.0811L9.39109 21.6231L7.98724 21.2298C7.93567 21.2153 7.86572 21.2052 7.81176 21.2029C7.70218 21.195 5.07212 20.9529 4.94415 15.1021ZM33.5632 59.058L5.55821 51.2065C5.5064 51.1915 5.43717 51.1815 5.38321 51.1788C5.27171 51.1714 2.64046 50.9296 2.51321 45.0802C2.46785 42.9902 2.84173 41.482 3.59211 40.714C4.07176 40.224 4.63664 40.1221 5.02318 40.1221C5.22826 40.1221 5.37509 40.1496 5.38584 40.1496C5.38584 40.1496 5.38703 40.1496 5.38584 40.1496L33.8724 49.4388L33.5632 59.058ZM70.2601 49.1721C70.3043 49.6028 70.3535 49.9942 70.4012 50.2926L35.1113 59.0717L35.4197 49.5193L42.9644 47.9681L44.0787 48.2377L48.2549 46.8804L67.5054 42.9245L71.1958 42.1653C70.0159 44.3224 70.0648 47.276 70.2601 49.1721ZM72.204 36.1901C72.1398 36.1916 72.0756 36.2002 72.0152 36.2193L69.3536 36.9644L44.0109 44.0705L43.701 34.4516L52.0156 31.7396L72.1486 25.1737C72.1512 25.1725 73.2077 24.9379 73.9832 25.7264C74.7338 26.4938 75.1062 28.0034 75.0623 30.0908C74.931 35.9397 72.2998 36.1827 72.204 36.1901Z"
+                    fill="#503E9D" />
+            </svg>
+        </div>
+    </section>
+    <section class="revenue">
+        <div class="revenue__head">
+            <div class="revenue__head-group">
+                <h3 class="section__title">Revenue</h3>
+                <span class="revenue__change"><svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.92 0.585273C19.8186 0.35461 19.6245 0.17131 19.3802 0.075519C19.26 0.0271481 19.1309 0.00149149 19.0003 0H14.0017C13.7366 0 13.4823 0.0994558 13.2948 0.276488C13.1074 0.45352 13.002 0.693627 13.002 0.943988C13.002 1.19435 13.1074 1.43446 13.2948 1.61149C13.4823 1.78852 13.7366 1.88798 14.0017 1.88798H16.591L11.0026 7.16487L7.71356 4.04971C7.62063 3.96123 7.51006 3.891 7.38823 3.84308C7.26641 3.79515 7.13574 3.77048 7.00377 3.77048C6.87179 3.77048 6.74113 3.79515 6.6193 3.84308C6.49748 3.891 6.38691 3.96123 6.29397 4.04971L0.295713 9.71364C0.202011 9.8014 0.127639 9.9058 0.0768846 10.0208C0.0261307 10.1359 0 10.2593 0 10.3839C0 10.5085 0.0261307 10.6319 0.0768846 10.7469C0.127639 10.8619 0.202011 10.9663 0.295713 11.0541C0.388649 11.1426 0.499218 11.2128 0.621042 11.2607C0.742866 11.3087 0.873533 11.3333 1.00551 11.3333C1.13748 11.3333 1.26815 11.3087 1.38997 11.2607C1.5118 11.2128 1.62237 11.1426 1.7153 11.0541L7.00377 6.05097L10.2928 9.16613C10.3858 9.25461 10.4963 9.32483 10.6181 9.37276C10.74 9.42068 10.8706 9.44536 11.0026 9.44536C11.1346 9.44536 11.2653 9.42068 11.3871 9.37276C11.5089 9.32483 11.6195 9.25461 11.7124 9.16613L18.0006 3.219V5.66393C18.0006 5.91429 18.1059 6.1544 18.2934 6.33143C18.4809 6.50846 18.7352 6.60792 19.0003 6.60792C19.2654 6.60792 19.5197 6.50846 19.7072 6.33143C19.8947 6.1544 20 5.91429 20 5.66393V0.943988C19.9984 0.820631 19.9713 0.698761 19.92 0.585273Z"
+                            fill="#15CC35" />
+                    </svg> +3.2%</span>
+            </div>
+            <label for="course-legend" class="legend__check-group">
+                <input checked="true" class="legend__checkbox" id="course-legend" type="checkbox">
+                <span class="course-legend legend__name"> Course Sales</span>
+            </label>
+            <label for="page-legend" class="legend__check-group">
+                <input checked="true" class="legend__checkbox" id="page-legend" type="checkbox">
+                <span class="page-legend legend__name">Page Views</span>
+            </label>
+            <div class="filter__dropdown">
+                <span class="filter">This Year</span><svg class="dropdown__icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 512">
+                    <!-- Font Awesome Pro 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                    <path
+                        d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z" />
+                </svg>
+            </div>
+        </div>
+        <canvas #revchart id="revenue__chart"></canvas>
+    </section>
+    <section class="schedule">
+        <div class="schedule__head">
+            <h3 class="section__title">Schedule</h3>
+            <button class="schedule__add-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    viewBox="0 0 384 512" fill="#fb632d">
+                    <!-- Font Awesome Pro 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                    <path
+                        d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" />
+                </svg>New Schedule</button>
+        </div>
+        <ul class="schedule__list">
+            <li *ngFor="let i of [1,2,3,4,5]" class="schedule__item">
+                <img src="../../../../assets/images/liveimg.png" alt="schedule image">
+                <div class="schedule__info"><a href="#" class="schedule__link">Live Class with Group A : Introduction to
+                        Wireframing</a><span class="schedule__time">14:00WAT . Monday, December 7, 2020</span></div>
+            </li>
+        </ul>
+    </section>
+    <section class="wallet">
+        <div class="wallet__head">
+            <h3 class="section__title">Wallet</h3>
+            <div class="wallet__buttons">
+                <button class="wallet__more-button">Get more Insight<svg width="24" height="24"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" fill="#fb632d">
+                        <!-- Font Awesome Pro 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                        <path
+                            d="M166.9 264.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L127.3 256 25.1 155.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z" />
+                    </svg></button>
+                <button class="wallet__withdraw-button">Request Withdrawal <svg width="24" height="24"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" fill="#fff">
+                        <!-- Font Awesome Pro 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                        <path
+                            d="M166.9 264.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L127.3 256 25.1 155.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z" />
+                    </svg></button>
+            </div>
+        </div>
+        <div class="wallet__list">
+            <div class="wallet__item">
+                <div class="wallet__info">
+                    <div class="wallet__amount">$0</div>
+                    <div class="wallet__item__title">Today's Earning</div>
+                </div>
+                <a routerLink="" class="wallet__go"><svg width="18" height="12" viewBox="0 0 18 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 7H14.17L10.585 10.585L12 12L18 6L12 0L10.585 1.415L14.17 5H0V7Z" fill="#FFA166" />
+                    </svg>
+                </a>
+            </div>
+            <div class="wallet__item">
+                <div class="wallet__info">
+                    <div class="wallet__amount">$56.5</div>
+                    <div class="wallet__item__title">Pending Funds</div>
+                </div>
+                <a routerLink="" class="wallet__go"><svg width="18" height="12" viewBox="0 0 18 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 7H14.17L10.585 10.585L12 12L18 6L12 0L10.585 1.415L14.17 5H0V7Z" fill="#A1ADF7" />
+                    </svg>
+                </a>
+            </div>
+            <div class="wallet__item">
+                <div class="wallet__info">
+                    <div class="wallet__amount">$564.20</div>
+                    <div class="wallet__item__title">Available Funds</div>
+                </div>
+                <a routerLink="" class="wallet__go"><svg width="18" height="12" viewBox="0 0 18 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 7H14.17L10.585 10.585L12 12L18 6L12 0L10.585 1.415L14.17 5H0V7Z" fill="#A7F1F1" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visitors">
+        <div class="visitors__head">
+            <div class="visitors__head-group">
+                <h3 class="section__title ">Visitors</h3>
+                <span class="visitors__change"><svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.92 0.585273C19.8186 0.35461 19.6245 0.17131 19.3802 0.075519C19.26 0.0271481 19.1309 0.00149149 19.0003 0H14.0017C13.7366 0 13.4823 0.0994558 13.2948 0.276488C13.1074 0.45352 13.002 0.693627 13.002 0.943988C13.002 1.19435 13.1074 1.43446 13.2948 1.61149C13.4823 1.78852 13.7366 1.88798 14.0017 1.88798H16.591L11.0026 7.16487L7.71356 4.04971C7.62063 3.96123 7.51006 3.891 7.38823 3.84308C7.26641 3.79515 7.13574 3.77048 7.00377 3.77048C6.87179 3.77048 6.74113 3.79515 6.6193 3.84308C6.49748 3.891 6.38691 3.96123 6.29397 4.04971L0.295713 9.71364C0.202011 9.8014 0.127639 9.9058 0.0768846 10.0208C0.0261307 10.1359 0 10.2593 0 10.3839C0 10.5085 0.0261307 10.6319 0.0768846 10.7469C0.127639 10.8619 0.202011 10.9663 0.295713 11.0541C0.388649 11.1426 0.499218 11.2128 0.621042 11.2607C0.742866 11.3087 0.873533 11.3333 1.00551 11.3333C1.13748 11.3333 1.26815 11.3087 1.38997 11.2607C1.5118 11.2128 1.62237 11.1426 1.7153 11.0541L7.00377 6.05097L10.2928 9.16613C10.3858 9.25461 10.4963 9.32483 10.6181 9.37276C10.74 9.42068 10.8706 9.44536 11.0026 9.44536C11.1346 9.44536 11.2653 9.42068 11.3871 9.37276C11.5089 9.32483 11.6195 9.25461 11.7124 9.16613L18.0006 3.219V5.66393C18.0006 5.91429 18.1059 6.1544 18.2934 6.33143C18.4809 6.50846 18.7352 6.60792 19.0003 6.60792C19.2654 6.60792 19.5197 6.50846 19.7072 6.33143C19.8947 6.1544 20 5.91429 20 5.66393V0.943988C19.9984 0.820631 19.9713 0.698761 19.92 0.585273Z"
+                            fill="#15CC35" />
+                    </svg> +1.2%</span>
+            </div>
+            <i class="pi pi-ellipsis-v"></i>
+        </div>
+        <canvas class="visitors__chart" id="visitors__chart"></canvas>
+    </section>
+    <section class="course-status">
+        <div class="section__head">
+            <h3 class="section__title">Course Status</h3>
+            <div class="filter__dropdown">
+                <span class="filter">This Month</span><svg class="dropdown__icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 512">
+                    <!-- Font Awesome Pro 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                    <path
+                        d="M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z" />
+                </svg>
+            </div>
+        </div>
+        <Table>
+            <thead>
+                <th>Name</th>
+                <th>Sales</th>
+                <th>Rating</th>
+                <th>Earning</th>
+                <th>Visitor</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of [1,2,3,4,5]">
+                    <td><img class="course__image" src="../../../../assets/images/laptop.png" alt="course image">
+                        <span class="course__info"><span class="course__name">Advanced Excel & Functions</span><span
+                                class="course__subtitle">Advanced Excel & Functions</span></span>
+                    </td>
+                    <td>120</td>
+                    <td><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.9584 6.13693C15.8536 5.81295 15.5663 5.58284 15.2263 5.5522L10.6082 5.13287L8.78215 0.858717C8.6475 0.545476 8.34085 0.342712 8.00015 0.342712C7.65944 0.342712 7.35279 0.545476 7.21814 0.859449L5.39205 5.13287L0.773276 5.5522C0.433912 5.58357 0.147283 5.81295 0.041934 6.13693C-0.0634154 6.46091 0.0338772 6.81627 0.290598 7.04027L3.78129 10.1016L2.75196 14.6358C2.67665 14.9692 2.80604 15.3138 3.08266 15.5138C3.23135 15.6212 3.4053 15.6759 3.58072 15.6759C3.73197 15.6759 3.882 15.6351 4.01665 15.5545L8.00015 13.1737L11.9822 15.5545C12.2736 15.7298 12.6409 15.7138 12.9169 15.5138C13.1936 15.3132 13.3229 14.9685 13.2476 14.6358L12.2183 10.1016L15.709 7.04088C15.9657 6.81627 16.0637 6.46152 15.9584 6.13693Z"
+                                fill="#FFC107" />
+                        </svg> 3.5</td>
+                    <td>$24</td>
+                    <td>12,409</td>
+                </tr>
+            </tbody>
+        </Table>
+    </section>
+</main>

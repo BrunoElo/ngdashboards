@@ -27,6 +27,11 @@ const routes: Routes = [
         (m) => m.AutocreditModule
       ),
   },
+  {
+    path: 'nosila',
+    loadChildren: () =>
+      import('./dashboards/nosila/nosila.module').then((m) => m.NosilaModule),
+  },
 
   { path: '', component: HomeComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },

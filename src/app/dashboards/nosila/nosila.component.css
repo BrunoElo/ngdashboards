@@ -1,0 +1,114 @@
+/*==== FONTS ====*/
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../../../assets/fonts/CircularStdBook/@font-face/2d98f490df6dc039774b101701ce3aba.eot"); /* IE9*/
+  src: url("../../../assets/fonts/CircularStdBook/@font-face/2d98f490df6dc039774b101701ce3aba.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../../assets/fonts/CircularStdBook/@font-face/2d98f490df6dc039774b101701ce3aba.woff2")
+      format("woff2"),
+    /* chrome、firefox */
+      url("../../../assets/fonts/CircularStdBook/@font-face/2d98f490df6dc039774b101701ce3aba.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("../../../assets/fonts/CircularStdBook/@font-face/2d98f490df6dc039774b101701ce3aba.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../../../assets/fonts/CircularStdBook/@font-face/2d98f490df6dc039774b101701ce3aba.svg#CircularStd-Book")
+      format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "Circular Std Medium";
+  src: url("../../../assets/fonts/CircularStdMedium/@font-face/9475d6a0b79c164f9f605673714e75d9.eot"); /* IE9*/
+  src: url("../../../assets/fonts/CircularStdMedium/@font-face/9475d6a0b79c164f9f605673714e75d9.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../../assets/fonts/CircularStdMedium/@font-face/9475d6a0b79c164f9f605673714e75d9.woff2")
+      format("woff2"),
+    /* chrome、firefox */
+      url("../../../assets/fonts/CircularStdMedium/@font-face/9475d6a0b79c164f9f605673714e75d9.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("../../../assets/fonts/CircularStdMedium/@font-face/9475d6a0b79c164f9f605673714e75d9.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../../../assets/fonts/CircularStdMedium/@font-face/9475d6a0b79c164f9f605673714e75d9.svg#Circular Std Medium")
+      format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "Circular Std Bold";
+  src: url("../../../assets/fonts/CircularStdBold/@font-face/06d1b1518a180e5a9cca2c23401ec40a.eot"); /* IE9*/
+  src: url("../../../assets/fonts/CircularStdBold/@font-face/06d1b1518a180e5a9cca2c23401ec40a.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../../assets/fonts/CircularStdBold/@font-face/06d1b1518a180e5a9cca2c23401ec40a.woff2")
+      format("woff2"),
+    /* chrome、firefox */
+      url("../../../assets/fonts/CircularStdBold/@font-face/06d1b1518a180e5a9cca2c23401ec40a.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("../../../assets/fonts/CircularStdBold/@font-face/06d1b1518a180e5a9cca2c23401ec40a.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../../../assets/fonts/CircularStdBold/@font-face/06d1b1518a180e5a9cca2c23401ec40a.svg#CircularStd-Bold")
+      format("svg"); /* iOS 4.1- */
+}
+
+/*==== CSS VARIABLES ====*/
+:host {
+  /* Colors */
+  --main-color: #503e9d;
+  --accent-color: #fb632d;
+  --bg-color: rgba(249, 248, 252, 1);
+
+  --primary-font-color-dark: #494454;
+  --primary-font-color-light: #fff;
+  --secondary-font-color: rgba(73, 68, 85, 0.7);
+  --table-font-color: rgba(6, 15, 79, 0.7);
+
+  font-family: "Circular Std Book";
+
+  background-color: var(--bg-color);
+  display: block;
+  color: var(--primary-font-color-dark);
+  /* General padding */
+  padding: 6rem 1rem 3rem 86px;
+  transition: padding 0.2s;
+}
+
+:host-context(.collapsed) {
+  padding-left: 266px;
+}
+
+@media only screen and (max-width: 786px) {
+  :host-context(.collapsed) {
+    padding-left: 86px;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  :host {
+    padding-left: 1rem;
+  }
+
+  :host-context(.collapsed) {
+    padding-left: 1rem;
+  }
+}
+/* Custom module scope scrollbar */
+
+::ng-deep::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::ng-deep::-webkit-scrollbar-track {
+  background-color: #6160653d;
+}
+
+::ng-deep::-webkit-scrollbar-thumb {
+  background-color: #503e9d;
+  border-radius: 0.2rem;
+}
