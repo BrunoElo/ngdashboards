@@ -55,8 +55,7 @@ export class NosilaDashboardComponent
     this.revChartContext = this.renderer
       .selectRootElement(this.revchart)
       .nativeElement.getContext('2d');
-
-    const gradientFill = this.revChartContext.createLinearGradient(
+    const gradientFill: CanvasGradient = this.revChartContext.createLinearGradient(
       0,
       0,
       0,
@@ -83,7 +82,6 @@ export class NosilaDashboardComponent
       },
       options: {
         maintainAspectRatio: false,
-
         scales: {
           y: {
             grid: {
@@ -104,7 +102,7 @@ export class NosilaDashboardComponent
     });
   }
 
-  initializeRevenueChart(gradient) {
+  initializeRevenueChart(gradient: CanvasGradient) {
     this.chart = new Chart('revenue__chart', {
       type: 'line',
       data: {
