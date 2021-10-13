@@ -1,5 +1,7 @@
 # Ngdashboards
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/07547615-f6df-4bea-88da-c0d4d3a819e3/deploy-status)](https://app.netlify.com/sites/ngdashboards/deploys)
+
 This project is a collection of dashboards built with angular.  
 Each dashboard was implemented as lazy loaded module to allow for optimisations and easy scaling of the dashboards if additional views are to be made.
 
